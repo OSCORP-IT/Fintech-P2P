@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+  width: 4px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(173, 173, 173);
+  border-radius: 10px;
+}
+/* .mainScroll::-webkit-scrollbar {
+  display: none;
+}
+
+Hide scrollbar for IE, Edge and Firefox */
+.mainContent {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

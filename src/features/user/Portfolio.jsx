@@ -51,6 +51,7 @@ function Portfolio() {
               <div className="w-full">
                 <DatePicker
                   selected={selectedDate}
+                  required
                   id="date"
                   onChange={(date) => setSelectedDate(date)}
                   placeholderText="DD-MM-YYYY"
@@ -69,6 +70,7 @@ function Portfolio() {
               <input
                 type="text"
                 name="address"
+                required
                 id="address"
                 placeholder="Present Address"
                 className="w-full rounded-md px-4 py-3 border border-gray-300"
@@ -81,6 +83,7 @@ function Portfolio() {
                 </h2>
                 <select
                   id="division"
+                  required
                   onChange={handleDivisionChange}
                   value={selectedDivision}
                   className="w-full rounded-md px-4 py-3 border border-gray-300"
@@ -99,6 +102,7 @@ function Portfolio() {
                 </h2>
                 <select
                   id="district"
+                  required
                   onChange={handleDistrictChange}
                   value={selectedDistrict}
                   disabled={!selectedDivision}
@@ -125,6 +129,7 @@ function Portfolio() {
                 <input
                   type="text"
                   name="NID"
+                  required
                   id="NID"
                   placeholder="National ID"
                   className="w-full rounded-md px-4 py-3 border border-gray-300"
@@ -180,6 +185,11 @@ function Portfolio() {
                   className="w-full rounded-md px-4 py-3 border border-gray-300"
                 />
               </div>
+            </div>
+            <div className="flex justify-center items-center mt-8 mb-4">
+              <h1 className="px-4 py-3 bg-amberYellow rounded-lg cursor-pointer font-semibold text-lg">
+                Save & Continue
+              </h1>
             </div>
           </div>
         </Form>

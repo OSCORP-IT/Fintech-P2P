@@ -118,3 +118,26 @@ export const divisions = {
     },
   ],
 };
+
+export const bangladeshBanks = [
+  "Sonali Bank Limited",
+  "Agrani Bank Limited",
+  "Janata Bank Limited",
+  "Rupali Bank Limited",
+  "Bangladesh Krishi Bank",
+  "Pubali Bank Limited",
+  "National Bank Limited",
+  "Dutch-Bangla Bank Limited",
+  "Brac Bank Limited",
+  "Eastern Bank Limited",
+  "Mercantile Bank Limited",
+  "Mutual Trust Bank Limited",
+  "One Bank Limited",
+  "First Security Islami Bank Limited",
+  "IFIC Bank Limited",
+  "United Commercial Bank Limited",
+  "City Bank Limited",
+  "Standard Chartered Bank",
+  "HSBC Bank Bangladesh",
+  "Bank Asia Limited",
+];

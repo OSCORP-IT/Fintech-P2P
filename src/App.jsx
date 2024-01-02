@@ -10,6 +10,7 @@ import Help from "./features/pages/help/Help";
 import ProfileOverview from "./features/user/ProfileOverview";
 import Portfolio from "./features/user/Portfolio";
 import ProfessionalInfo from "./features/user/ProfessionalInfo";
+import BankDetails from "./features/user/BankDetails";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/user/portfolio/professional",
         element: <ProfessionalInfo />,
+      },
+      {
+        path: "/user/portfolio/bank_details",
+        element: <BankDetails />,
       },
     ],
   },

@@ -1,7 +1,8 @@
-import { FaArrowTrendUp, FaBagShopping } from "react-icons/fa6";
+import { FaArrowTrendUp } from "react-icons/fa6";
 import { BsBoxArrowRight } from "react-icons/bs";
 import { HiCurrencyBangladeshi } from "react-icons/hi";
 import { MdOutlineSettings } from "react-icons/md";
+import { IoHome } from "react-icons/io5";
 
 import { CgProfile } from "react-icons/cg";
 function ProfileLayout({ children }) {
@@ -37,26 +38,36 @@ function ProfileLayout({ children }) {
             <div>
               <div className="flex flex-col items-start">
                 <div className="flex gap-2 items-center py-2">
-                  <CgProfile className="text-xl" />
-                  <p className="text-xl font-semibold">User Profile</p>
+                  <IoHome className="text-xl" />
+                  <p className="text-xl font-semibold cursor-pointer">
+                    Dashboard
+                  </p>
                 </div>
-                <div className="flex gap-2 items-center py-2 ">
-                  <FaBagShopping className="text-xl" />
-                  <p className="text-xl font-semibold">Portfolio</p>
+                <div className="flex gap-2 items-center py-2">
+                  <CgProfile className="text-xl" />
+                  <p className="text-xl font-semibold cursor-pointer">
+                    User Profile
+                  </p>
                 </div>
                 <div className="flex gap-2 items-center py-2 ">
                   <HiCurrencyBangladeshi className="text-xl" />
-                  <p className="text-xl font-semibold">Transaction</p>
+                  <p className="text-xl font-semibold cursor-pointer">
+                    Transaction
+                  </p>
                 </div>
                 <div className="flex gap-2 items-center py-2 ">
                   <MdOutlineSettings className="text-xl" />
-                  <p className="text-xl font-semibold">Settings</p>
+                  <p className="text-xl font-semibold cursor-pointer">
+                    Settings
+                  </p>
                 </div>
               </div>
               <div className="mt-14">
                 <div className="flex gap-2 items-center py-2 text-amberYellow">
                   <BsBoxArrowRight className="text-xl" />
-                  <p className="text-xl font-semibold">Log Out</p>
+                  <p className="text-xl font-semibold cursor-pointer">
+                    Log Out
+                  </p>
                 </div>
               </div>
             </div>

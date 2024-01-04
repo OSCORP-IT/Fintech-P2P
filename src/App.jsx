@@ -11,6 +11,8 @@ import ProfileOverview from "./features/user/ProfileOverview";
 import Portfolio from "./features/user/Portfolio";
 import ProfessionalInfo from "./features/user/ProfessionalInfo";
 import BankDetails from "./features/user/BankDetails";
+import Guarantor from "./features/user/Guarantor";
+import Dashboard from "./features/user/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -49,7 +51,11 @@ const router = createBrowserRouter([
         element: <ProfileOverview />,
       },
       {
-        path: "/user/portfolio",
+        path: "/user/dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "/user/portfolio/personal",
         element: <Portfolio />,
       },
       {
@@ -59,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: "/user/portfolio/bank_details",
         element: <BankDetails />,
+      },
+      {
+        path: "/user/portfolio/guarantor",
+        element: <Guarantor />,
       },
     ],
   },

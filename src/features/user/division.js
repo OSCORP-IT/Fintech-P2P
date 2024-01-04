@@ -141,3 +141,17 @@ export const bangladeshBanks = [
   "HSBC Bank Bangladesh",
   "Bank Asia Limited",
 ];
+
+export const professions = [
+  "Teacher",
+  "Engineer",
+  "Doctor",
+  "Accountant",
+  "IT Professional",
+  "Business Owner",
+  "Sales Representative",
+  "Lawyer",
+  "Government Employee",
+  "Freelancer",
+  "Other",
+];

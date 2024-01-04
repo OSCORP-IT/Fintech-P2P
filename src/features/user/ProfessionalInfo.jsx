@@ -49,6 +49,11 @@ function ProfessionalInfo() {
             <Education />
             {/* OutStanding Loan */}
             <OutstandingLoan />
+            <div className="flex justify-center items-center mt-8 mb-4">
+              <h1 className="px-4 py-3 bg-amberYellow rounded-lg cursor-pointer font-semibold text-lg">
+                Save & Continue
+              </h1>
+            </div>
           </div>
         </Form>
       </div>

@@ -5,7 +5,9 @@ import { MdOutlineSettings } from "react-icons/md";
 import { IoHome } from "react-icons/io5";
 
 import { CgProfile } from "react-icons/cg";
-function ProfileLayout({ children }) {
+import { useNavigate } from "react-router-dom";
+function ProfileLayout({ children, menu }) {
+  const navigate = useNavigate();
   return (
     <div className=" bg-gradient-to-l from-orange-50 to-gray-200 flex justify-center">
       <div className="w-5/6 flex gap-4 my-4">
@@ -37,15 +39,35 @@ function ProfileLayout({ children }) {
             </div>
             <div>
               <div className="flex flex-col items-start">
-                <div className="flex gap-2 items-center py-2">
+                <div
+                  onClick={() => navigate("/user/dashboard")}
+                  className={`${
+                    menu === "dashboard" ? "text-amberYellow" : ""
+                  } flex gap-2 items-center py-2 w-full`}
+                >
                   <IoHome className="text-xl" />
-                  <p className="text-xl font-semibold cursor-pointer">
+                  <p
+                    className={`text-xl font-semibold cursor-pointer w-full ${
+                      menu === "dashboard"
+                        ? "border-r-4 border-amberYellow"
+                        : ""
+                    }`}
+                  >
                     Dashboard
                   </p>
                 </div>
-                <div className="flex gap-2 items-center py-2">
+                <div
+                  onClick={() => navigate("/user/profile")}
+                  className={`${
+                    menu === "profile" ? "text-amberYellow" : ""
+                  } flex gap-2 items-center py-2 w-full`}
+                >
                   <CgProfile className="text-xl" />
-                  <p className="text-xl font-semibold cursor-pointer">
+                  <p
+                    className={`text-xl font-semibold cursor-pointer w-full ${
+                      menu === "profile" ? "border-r-4 border-amberYellow" : ""
+                    }`}
+                  >
                     User Profile
                   </p>
                 </div>

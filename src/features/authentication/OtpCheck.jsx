@@ -1,7 +1,9 @@
 import { MdArrowOutward } from "react-icons/md";
 import Layout from "./Layout";
+import { useNavigate } from "react-router-dom";
 
 function OtpCheck() {
+  const navigate = useNavigate();
   return (
     <Layout>
       <div>
@@ -16,7 +18,10 @@ function OtpCheck() {
         />
       </div>
       <div className="flex flex-col items-center justify-center py-10">
-        <div className="flex items-center gap-1 bg-emeraldGreen hover:bg-emerald-700 px-5 py-2 rounded text-white font-semibold cursor-pointer">
+        <div
+          onClick={() => navigate("/register")}
+          className="flex items-center gap-1 bg-emeraldGreen hover:bg-emerald-700 px-5 py-2 rounded-md text-white font-semibold cursor-pointer"
+        >
           <h3>Send OTP</h3>
           <MdArrowOutward />
         </div>

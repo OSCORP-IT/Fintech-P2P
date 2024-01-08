@@ -16,7 +16,7 @@ function DashboardApplyLoan() {
                   Personal Loans
                 </h5>
               </div>
-              <div className="absolute cursor-pointer bottom-2 flex bg-amberYellow rounded-full text-neutral-700 items-center gap-1 font-semibold w-max px-2 py-1.5">
+              <div className="absolute hover:shadow cursor-pointer bottom-2 flex bg-amberYellow rounded-full text-neutral-700 items-center gap-1 font-semibold w-max px-2 py-1.5">
                 <h3>Apply Now</h3>
                 <MdArrowOutward />
               </div>
@@ -40,7 +40,7 @@ function DashboardApplyLoan() {
                   Business Loans
                 </h5>
               </div>
-              <div className="absolute cursor-pointer bottom-2 flex bg-amberYellow rounded-full text-neutral-700 items-center gap-1 font-semibold w-max px-2 py-1.5">
+              <div className="absolute hover:shadow cursor-pointer bottom-2 flex bg-amberYellow rounded-full text-neutral-700 items-center gap-1 font-semibold w-max px-2 py-1.5">
                 <h3>Apply Now</h3>
                 <MdArrowOutward />
               </div>
@@ -64,7 +64,7 @@ function DashboardApplyLoan() {
                   Investment
                 </h5>
               </div>
-              <div className="absolute cursor-pointer bottom-2 flex bg-amberYellow rounded-full text-neutral-700 items-center gap-1 font-semibold w-max px-2 py-1.5">
+              <div className="absolute hover:shadow cursor-pointer bottom-2 flex bg-amberYellow rounded-full text-neutral-700 items-center gap-1 font-semibold w-max px-2 py-1.5">
                 <h3>Apply Now</h3>
                 <MdArrowOutward />
               </div>

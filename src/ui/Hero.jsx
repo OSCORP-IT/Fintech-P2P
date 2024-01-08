@@ -1,7 +1,9 @@
 import { BiCategoryAlt } from "react-icons/bi";
 import hero from "../assets/Hero.png";
 import { MdArrowOutward } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 function Hero() {
+  const navigate = useNavigate();
   return (
     <div className="w-full bg-gradient-to-l from-gray-200 to-orange-50 flex justify-center">
       <div className="w-5/6 flex items-center justify-center py-8">
@@ -24,11 +26,14 @@ function Hero() {
             adipiscing tincidunt ut aenean.
           </p>
           <div className="flex my-4 gap-2 font-semibold">
-            <div className="flex bg-emeraldGreen p-3 rounded-full text-white items-center gap-2">
+            <div className="cursor-pointer flex bg-emeraldGreen p-3 rounded-full text-white items-center gap-2 hover:bg-amberYellow ">
               <h3>Check Your Rate</h3>
               <MdArrowOutward />
             </div>
-            <div className="flex border border-emeraldGreen text-emeraldGreen p-3 rounded-full items-center gap-2">
+            <div
+              onClick={() => navigate("/about_us")}
+              className="cursor-pointer flex border border-emeraldGreen text-emeraldGreen p-3 rounded-full items-center gap-2 hover:bg-emeraldGreen hover:text-white"
+            >
               <h3>About Us</h3>
               <MdArrowOutward />
             </div>

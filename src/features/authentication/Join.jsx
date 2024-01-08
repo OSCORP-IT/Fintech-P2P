@@ -1,7 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import Layout from "./Layout";
-
 import { MdArrowOutward } from "react-icons/md";
 function Join() {
+  const navigate = useNavigate();
   return (
     <Layout>
       <div className="p-2">
@@ -31,7 +32,10 @@ function Join() {
           />
         </div>
         <div className="flex justify-center py-8">
-          <div className="flex items-center gap-1 bg-emeraldGreen px-5 py-2 rounded text-white font-semibold cursor-pointer">
+          <div
+            onClick={() => navigate("/otp_confirm")}
+            className="flex items-center gap-1 bg-emeraldGreen px-5 py-2 rounded-md text-white font-semibold cursor-pointer"
+          >
             <h3>Send OTP</h3>
             <MdArrowOutward />
           </div>

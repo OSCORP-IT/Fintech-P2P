@@ -2,9 +2,11 @@ import Layout from "./Layout";
 import { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import { MdArrowOutward } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 function ProfilePic() {
   const [selectedFile, setSelectedFile] = useState(null);
+  const navigate = useNavigate();
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
@@ -38,7 +40,7 @@ function ProfilePic() {
           {selectedFile ? `Selected: ${selectedFile.name}` : ""}
         </p>
       </div>
-      <div className="flex justify-center py-8">
+      <div onClick={() => navigate("/")} className="flex justify-center py-8">
         <div className="flex items-center gap-1 bg-emeraldGreen px-5 py-2 rounded text-white font-semibold cursor-pointer">
           <h3>Sign Up</h3>
           <MdArrowOutward />

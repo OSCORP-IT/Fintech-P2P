@@ -5,7 +5,7 @@ import { ImLocation2 } from "react-icons/im";
 
 function ProfileOverview() {
   return (
-    <ProfileLayout>
+    <ProfileLayout menu={"profile"}>
       <div className="px-4 py-6">
         <div className="w-full rounded-md">
           <img src={cover} alt="cover photo" className="w-full" />

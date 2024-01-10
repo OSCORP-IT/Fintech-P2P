@@ -5,7 +5,7 @@ import { MdArrowOutward } from "react-icons/md";
 function Header() {
   const navigate = useNavigate();
   return (
-    <div className="fixed w-full flex justify-center z-50 bg-white shadow">
+    <div className="fixed w-full flex justify-center z-10 bg-white shadow">
       <div className=" h-[88px]   w-5/6 flex justify-between items-center ">
         <div className="">
           <img src={logo} alt="logo" />

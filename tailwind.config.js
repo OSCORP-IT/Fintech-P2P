@@ -14,6 +14,7 @@ export default {
       },
       fontFamily: {
         arial: ["Arial", "sans-serif"],
+        frank: ["Frank Ruhl Libre", "sans-serif"],
       },
     },
   },

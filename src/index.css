@@ -23,3 +23,19 @@ Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+@font-face {
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Frank Ruhl Libre Regular"), local("FrankRuhlLibre-Regular"),
+    url(path/to/font.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Frank Ruhl Libre";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Frank Ruhl Libre Bold"), local("FrankRuhlLibre-Bold"),
+    url(path/to/font-bold.woff2) format("woff2");
+}

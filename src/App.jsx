@@ -13,6 +13,8 @@ import ProfessionalInfo from "./features/user/ProfessionalInfo";
 import BankDetails from "./features/user/BankDetails";
 import Guarantor from "./features/user/Guarantor";
 import Dashboard from "./features/user/Dashboard";
+import BasicInfo from "./features/businessLoan/basicInfo/BasicInfo";
+import BusinessInfo from "./features/businessLoan/businessInfo/BusinessInfo";
 
 const router = createBrowserRouter([
   {
@@ -69,6 +71,14 @@ const router = createBrowserRouter([
       {
         path: "/user/portfolio/guarantor",
         element: <Guarantor />,
+      },
+      {
+        path: "/user/business_loan/basicInfo",
+        element: <BasicInfo />,
+      },
+      {
+        path: "/user/business_loan/businessInfo",
+        element: <BusinessInfo />,
       },
     ],
   },

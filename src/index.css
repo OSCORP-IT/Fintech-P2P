@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.cards {
+  box-shadow: 0 6px 15px 0 rgba(178, 223, 219, 0.5),
+    0 6px 20px 0 rgba(178, 223, 219, 0.5);
+}
+
 *::-webkit-scrollbar {
   width: 4px;
 }

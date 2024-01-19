@@ -9,7 +9,7 @@ function Home() {
     <div>
       <Hero />
       <PersonalLoan />
-      <AppSection />y
+      <AppSection />
       <Halal />
       <Newsletter />
     </div>

@@ -1,84 +1,73 @@
-import { BiCategoryAlt } from "react-icons/bi";
-import grid1 from "../assets/1.png";
-import grid2 from "../assets/2.png";
-import grid3 from "../assets/3.png";
-import grid4 from "../assets/4.png";
+import { GoAlertFill } from "react-icons/go";
+import { FaHandHoldingDollar } from "react-icons/fa6";
+import { FaWallet } from "react-icons/fa";
+import { HiReceiptPercent } from "react-icons/hi2";
+
 function Halal() {
   return (
-    <div className="w-full bg-white flex justify-center py-6">
-      <div className="w-4/6 pt-10 pb-4 text-center">
-        <div className="flex gap-1 items-center justify-center">
-          <BiCategoryAlt className="text-xl text-emeraldGreen" />
-          <h2 className="text-xl font-bold text-emeraldGreen">
-            How We Are 100% Halal
-          </h2>
+    <>
+      <div className="w-full bg-backgroundMain flex justify-center py-6">
+        <div className="w-4/6 pt-10 pb-4 text-center">
+          <div className="flex gap-1 items-center justify-center">
+            <h2 className="text-2xl font-bold text-textColor1">
+              How We Are 100% Halal
+            </h2>
+          </div>
+          <div>
+            <h1 className="text-[54px] font-extrabold text-textColor1 py-6 font-poppins">
+              Committed to Pure Halal Standards: Our Assurance of
+              <span className="text-amberYellow"> 100% Halal </span>
+              Products
+            </h1>
+          </div>
         </div>
+      </div>
 
-        <h1 className="text-[36px] font-bold text-black py-3">
-          Committed to Pure Halal Standards: Our Assurance of{" "}
-          <span className="text-amberYellow">100% Halal </span>
-          Products
-        </h1>
-        <div className="flex gap-8 items-center justify-center">
-          <div className="bg-gray-200 py-2 h-[250px] rounded-xl flex flex-col items-center justify-center">
-            <div className="rounded-full p-2 bg-white w-max">
-              <img src={grid1} alt="risk sharing" />
-            </div>
-            <div className="px-4">
-              <h2 className="text-lg font-bold text-emeraldGreen py-2">
-                Risk Sharing
-              </h2>
-              <p>
+      <div className="w-full flex justify-center bg-white pb-12">
+        <div className="flex gap-8 items-center justify-between w-5/6 -mt-[54px] font-poppins">
+          <div className="bg-white shadow-2xl shadow-teal-100/50 text-textColor1 flex-grow h-[200px] rounded-xl flex flex-col justify-center items-center">
+            <GoAlertFill className="text-3xl text-accentColor" />
+            <h2 className="text-xl font-bold py-2">Risk Sharing</h2>
+            <div className="px-4 text-center">
+              <h5>
                 Here, the suppliers of funds become investors instead of
                 creditors
-              </p>
+              </h5>
             </div>
           </div>
-          <div className="bg-gray-200 py-2 h-[250px] rounded-xl flex flex-col items-center justify-center">
-            <div className="rounded-full p-5 bg-white w-max">
-              <img src={grid2} alt="risk sharing" />
-            </div>
-            <div className="px-4">
-              <h2 className="text-lg font-bold text-emeraldGreen py-2">
-                Profit & Loss Sharing
-              </h2>
-              <p>
+          <div className="bg-white shadow-2xl shadow-teal-100/50 text-textColor1 flex-grow h-[200px] rounded-xl flex flex-col justify-center items-center">
+            <FaHandHoldingDollar className="text-3xl text-accentColor" />
+            <h2 className="text-xl font-bold py-2">Profit & Loss Sharing</h2>
+            <div className="px-4 text-center">
+              <h5>
                 Here, the suppliers of funds become investors instead of
                 creditors
-              </p>
+              </h5>
             </div>
           </div>
-          <div className="bg-gray-200 py-2 h-[250px] rounded-xl flex flex-col items-center justify-center">
-            <div className="rounded-full p-2 bg-white w-max">
-              <img src={grid3} alt="risk sharing" />
-            </div>
-            <div className="px-4">
-              <h2 className="text-lg font-bold text-emeraldGreen py-2">
-                Fixed Income
-              </h2>
-              <p>
+          <div className="bg-white shadow-2xl shadow-teal-100/50 text-textColor1 flex-grow py-2 h-[200px] rounded-xl flex flex-col justify-center items-center">
+            <FaWallet className="text-3xl text-accentColor" />
+            <h2 className="text-xl font-bold  py-2">Fixed Income</h2>
+            <div className="px-4 text-center">
+              <h5>
                 Here, the suppliers of funds become investors instead of
                 creditors
-              </p>
+              </h5>
             </div>
           </div>
-          <div className="bg-gray-200 py-2 h-[250px] rounded-xl flex flex-col items-center justify-center">
-            <div className="rounded-full p-2 bg-white w-max">
-              <img src={grid4} alt="risk sharing" />
-            </div>
-            <div className="px-4">
-              <h2 className="text-lg font-bold text-emeraldGreen py-2">
-                No Interest (Riba)
-              </h2>
-              <p>
+          <div className="bg-white shadow-2xl shadow-teal-100/50 text-textColor1 flex-grow py-2 h-[200px] rounded-xl flex flex-col justify-center items-center">
+            <HiReceiptPercent className="text-3xl text-accentColor" />
+            <h2 className="text-xl font-bold  py-2">No Interest (Riba)</h2>
+            <div className="px-4 text-center">
+              <h5>
                 Here, the suppliers of funds become investors instead of
                 creditors
-              </p>
+              </h5>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

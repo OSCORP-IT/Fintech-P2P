@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 function AppLayout() {
   return (
-    <div className="h-screen">
+    <div className="h-screen font-poppins">
       <Header />
       <div className="w-full h-[88px]"></div>
       <main className="h-full leading-tight">

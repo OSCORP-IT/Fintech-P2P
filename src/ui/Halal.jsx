@@ -2,6 +2,7 @@ import { GoAlertFill } from "react-icons/go";
 import { FaHandHoldingDollar } from "react-icons/fa6";
 import { FaWallet } from "react-icons/fa";
 import { HiReceiptPercent } from "react-icons/hi2";
+import GradientHeader from "./GradientHeader";
 
 function Halal() {
   return (
@@ -14,11 +15,14 @@ function Halal() {
             </h2>
           </div>
           <div>
-            <h1 className="text-[54px] font-extrabold text-textColor1 py-6 font-poppins">
+            <GradientHeader
+              to="l"
+              addedClass="text-[54px] font-extrabold py-6 font-poppins"
+            >
               Committed to Pure Halal Standards: Our Assurance of
               <span className="text-amberYellow"> 100% Halal </span>
               Products
-            </h1>
+            </GradientHeader>
           </div>
         </div>
       </div>

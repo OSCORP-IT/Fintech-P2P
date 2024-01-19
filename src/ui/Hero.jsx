@@ -1,17 +1,21 @@
 import hero from "../assets/Hero.png";
 import Button from "./Button";
+import GradientHeader from "./GradientHeader";
 function Hero() {
   return (
     <div className="w-full bg-backgroundMain flex justify-center">
       <div className="w-5/6 flex items-center justify-center py-8">
         <div className="text-start w-1/2 pr-10">
-          <h5 className=" text-textColor2 font-bold text-2xl py-2">
+          <h5 className=" text-textColor1 font-bold text-2xl py-2 ">
             Compare and Choose the Best Loan
           </h5>
-          <h2 className="text-7xl font-extrabold font-poppins leading-none text-textColor1">
+          <GradientHeader
+            to="tl"
+            addedClass="text-7xl font-extrabold font-poppins leading-none "
+          >
             Find the <br /> Perfect Loan <br />
             for Your Needs
-          </h2>
+          </GradientHeader>
           <p className="text-black text-lg font-normal py-6">
             Lorem ipsum dolor sit amet consectetur. Lacus nulla sed cras
             vulputate nulla lectus mattis interdum proin. Congue magna

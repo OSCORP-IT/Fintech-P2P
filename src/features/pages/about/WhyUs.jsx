@@ -6,9 +6,9 @@ function WhyUs() {
       </div>
       <div className="flex justify-center items-center my-6">
         <div className="flex w-3/5 justify-center items-center gap-4">
-          <div className="pl-1.5 shadow-lg shadow-gray-200 w-1/2 h-[180px] bg-gradient-to-b from-emeraldGreen to-amberYellow rounded-xl">
+          <div className="pl-1.5 shadow-lg  w-1/2 h-[180px] bg-gradient-to-b from-accentColor to-teal-500 rounded-xl">
             <div className="w-full h-full bg-white rounded-xl px-10 py-4">
-              <h1 className="text-xl font-bold text-black ">
+              <h1 className="text-xl font-bold text-textColor1 ">
                 Establishing Islamic Finance
               </h1>
               <p className="py-4 ">
@@ -18,9 +18,9 @@ function WhyUs() {
               </p>
             </div>
           </div>
-          <div className="shadow-lg pr-1.5 shadow-gray-200 w-1/2 h-[180px] bg-gradient-to-b from-emeraldGreen to-amberYellow rounded-xl">
+          <div className="shadow-lg pr-1.5  w-1/2 h-[180px] bg-gradient-to-b from-accentColor to-teal-500 rounded-xl">
             <div className="w-full h-full bg-white rounded-xl px-10 py-4">
-              <h1 className="text-xl font-bold text-black ">
+              <h1 className="text-xl font-bold text-textColor1 ">
                 Meeting the need
               </h1>
               <p className="py-4 ">
@@ -34,9 +34,9 @@ function WhyUs() {
       </div>
       <div className="flex justify-center items-center my-6">
         <div className="flex w-3/5 justify-center items-center gap-4">
-          <div className="pl-1.5 shadow-lg shadow-gray-200 w-1/2 h-[180px] bg-gradient-to-b from-amberYellow to-emeraldGreen rounded-xl">
+          <div className="pl-1.5 shadow-lg  w-1/2 h-[180px] bg-gradient-to-b from-teal-500 to-accentColor rounded-xl">
             <div className="w-full h-full bg-white rounded-xl px-10 py-4">
-              <h1 className="text-xl font-bold text-black ">
+              <h1 className="text-xl font-bold text-textColor1 ">
                 Reinventing the system
               </h1>
               <p className="py-4 ">
@@ -46,9 +46,9 @@ function WhyUs() {
               </p>
             </div>
           </div>
-          <div className="shadow-lg pr-1.5 shadow-gray-200 w-1/2 h-[180px] bg-gradient-to-b from-amberYellow to-emeraldGreen rounded-xl">
+          <div className="shadow-lg pr-1.5  w-1/2 h-[180px] bg-gradient-to-b from-teal-500 to-accentColor rounded-xl">
             <div className="w-full h-full bg-white rounded-xl px-10 py-4">
-              <h1 className="text-xl font-bold text-black ">
+              <h1 className="text-xl font-bold text-textColor1 ">
                 Providing the values you deserve
               </h1>
               <p className="py-4 ">

@@ -1,11 +1,8 @@
-import { BiCategoryAlt } from "react-icons/bi";
-
 function WhyUs() {
   return (
-    <div>
+    <div className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-600 via-teal-800 to-teal-900 to-95% py-6">
       <div className="flex gap-1 items-center justify-center">
-        <BiCategoryAlt className="text-xl text-emeraldGreen" />
-        <h2 className="text-xl  font-bold text-emeraldGreen">Our Commitment</h2>
+        <h2 className="text-3xl  font-semibold text-white">Our Commitment</h2>
       </div>
       <div className="flex justify-center items-center my-6">
         <div className="flex w-3/5 justify-center items-center gap-4">

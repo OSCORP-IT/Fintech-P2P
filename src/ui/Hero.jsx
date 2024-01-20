@@ -10,11 +10,11 @@ function Hero() {
             Compare and Choose the Best Loan
           </h5>
           <GradientHeader
-            to="tl"
-            addedClass="text-7xl font-extrabold font-poppins leading-none "
+            to={"tl"}
+            addedClass="text-7xl font-extrabold font-poppins "
           >
             Find the <br /> Perfect Loan <br />
-            for Your Needs
+            for Your Need
           </GradientHeader>
           <p className="text-black text-lg font-normal py-6">
             Lorem ipsum dolor sit amet consectetur. Lacus nulla sed cras

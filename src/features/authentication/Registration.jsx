@@ -1,71 +1,59 @@
-import { MdArrowOutward } from "react-icons/md";
+import { FaUser } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { RiLockPasswordFill } from "react-icons/ri";
+import { BsFillShieldLockFill } from "react-icons/bs";
 import Input from "./Input";
 import Layout from "./Layout";
-import { useNavigate } from "react-router-dom";
+import Button from "../../ui/Button";
 
 function Registration() {
-  const navigate = useNavigate();
-  function handleclick() {
-    navigate("/profile_picture");
-  }
   return (
     <Layout>
-      <div className="flex gap-2 w-full ">
-        <div className="flex-grow">
-          <Input
-            label="First Name"
-            id="first"
-            placeholder="Enter First Name"
-            type="text"
-            required={true}
-          />
-        </div>
-        <div className="flex-grow">
-          <Input
-            label="Last Name"
-            id="Last"
-            placeholder="Enter Last Name"
-            type="text"
-            required={true}
-          />
-        </div>
-      </div>
-      <div>
+      <div className="w-full px-4">
         <Input
-          label="Enter E-mail ID"
-          id="email"
-          placeholder="abc@comapny.com"
-          type="email"
+          type="text"
+          name="fullName"
+          id="fullname"
+          placeholder="Full Name"
           required={true}
-        />
-      </div>
-      <div className="flex gap-2 w-full ">
-        <div className="flex-grow">
-          <Input
-            label="Password"
-            id="pass"
-            placeholder="********"
-            type="password"
-            required={true}
-          />
-        </div>
-        <div className="flex-grow">
-          <Input
-            label="Confirm Password"
-            id="confirm_pass"
-            placeholder="********"
-            type="password"
-            required={true}
-          />
-        </div>
-      </div>
-      <div className="flex justify-center py-8">
-        <div
-          onClick={handleclick}
-          className="flex items-center gap-1 bg-emeraldGreen px-5 py-2 rounded-md text-white font-semibold cursor-pointer"
         >
-          <h3>Next</h3>
-          <MdArrowOutward />
+          <FaUser className="text-xl" />
+        </Input>
+        <Input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required={true}
+        >
+          <MdEmail className="text-xl" />
+        </Input>
+        <Input
+          type="text"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required={true}
+        >
+          <RiLockPasswordFill className="text-xl" />
+        </Input>
+        <Input
+          type="text"
+          name="confirm_password"
+          id="confirm_password"
+          placeholder="Confirm Password"
+          required={true}
+        >
+          <BsFillShieldLockFill className="text-xl" />
+        </Input>
+        <div className="py-6">
+          <Button
+            addedClass={
+              "py-3 w-full text-center text-white bg-textColor1 text-lg font-semibold"
+            }
+          >
+            Sign Up
+          </Button>
         </div>
       </div>
     </Layout>

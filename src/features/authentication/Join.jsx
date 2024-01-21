@@ -1,45 +1,43 @@
-import { useNavigate } from "react-router-dom";
 import Layout from "./Layout";
-import { MdArrowOutward } from "react-icons/md";
+import { FaGlobe } from "react-icons/fa6";
+import { FaMobile } from "react-icons/fa";
+import Input from "./Input";
+import Button from "../../ui/Button";
+
 function Join() {
-  const navigate = useNavigate();
   return (
     <Layout>
-      <div className="p-2">
-        <div className="py-2">
-          <label htmlFor="select" className="mb-2 text-lg font-semibold">
-            Enter Country Code
-          </label>
-
-          <select
-            id="select"
-            className="bg-gray-200/50 p-2 border border-gray-300 rounded-full w-full flex-grow font-semibold"
-          >
+      <div className="w-full px-4">
+        <div className="w-full rounded-md border-2 border-textColor1 text-textColor1 flex gap-2 items-center justify-between pl-4 pr-4">
+          <FaGlobe className="text-xl" />
+          <select name="country" id="country" className="py-3 flex-grow">
+            <option value="">Country Code</option>
             <option value="bd">Bangladesh (+88)</option>
-            <option value="ind">India (+99)</option>
-            <option value="nep">Nepal (+09)</option>
+            <option value="ind">India (+90)</option>
           </select>
         </div>
-        <div>
-          <label htmlFor="input" className="text-lg font-semibold">
-            Enter Your Phone Number
-          </label>
-          <input
-            type="text"
-            id="input"
-            placeholder="01234567890"
-            className="bg-gray-200/50 w-full p-2 rounded-full border border-gray-300"
-          />
-        </div>
-        <div className="flex justify-center py-8">
-          <div
-            onClick={() => navigate("/otp_confirm")}
-            className="flex items-center gap-1 bg-emeraldGreen px-5 py-2 rounded-md text-white font-semibold cursor-pointer"
+        <Input
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder="Phone Number"
+          required={true}
+        >
+          <FaMobile className="text-xl" />
+        </Input>
+        <div className="pt-6 py-8">
+          <Button
+            addedClass={
+              "py-3 w-full text-center text-white bg-textColor1 text-lg font-semibold"
+            }
           >
-            <h3>Send OTP</h3>
-            <MdArrowOutward />
-          </div>
+            Next
+          </Button>
         </div>
+        <h2 className="text-center text-textColor3 capitalize">
+          already have an account?
+          <strong className="cursor-pointer text-textColor1"> Sign in</strong>
+        </h2>
       </div>
     </Layout>
   );

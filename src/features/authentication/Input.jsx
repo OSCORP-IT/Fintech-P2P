@@ -1,15 +1,16 @@
-function Input({ label, id, placeholder, type, required }) {
+function Input({ id, placeholder, type, required, children }) {
   return (
-    <>
-      <h2 className="text-lg font-semibold py-2">{label}</h2>
+    <div className="w-full mt-4 rounded-md border-2 border-textColor1 text-textColor1  flex gap-2 items-center justify-between pl-4">
+      {children}
       <input
         type={type}
+        name={id}
         id={id}
-        placeholder={placeholder ? placeholder : ""}
-        required={required ? true : false}
-        className="pt-2 bg-gray-200/50 w-full p-2 rounded-full border border-gray-300"
+        required={required ? required : false}
+        placeholder={placeholder}
+        className="py-3 rounded-md flex-grow px-0.5"
       />
-    </>
+    </div>
   );
 }
 

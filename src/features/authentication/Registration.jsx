@@ -46,7 +46,7 @@ function Registration() {
         >
           <BsFillShieldLockFill className="text-xl" />
         </Input>
-        <div className="py-6">
+        <div className="pt-6">
           <Button
             addedClass={
               "py-3 w-full text-center text-white bg-textColor1 text-lg font-semibold"

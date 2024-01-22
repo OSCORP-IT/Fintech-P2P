@@ -2,11 +2,18 @@ import { useNavigate } from "react-router-dom";
 import logo from "../assets/image 2.png";
 import Button from "./Button";
 
+const white = ["/contact", "/faq"];
+
 function Header() {
   const navigate = useNavigate();
+  const bgWhite = white.some((e) => e === window.location.pathname);
   return (
-    <div className="fixed w-full flex justify-center z-10 bg-backgroundMain shadow">
-      <div className=" h-[88px]   w-5/6 flex justify-between items-center ">
+    <div
+      className={`fixed w-full flex justify-center z-10 ${
+        bgWhite ? "bg-white" : "bg-backgroundMain"
+      }`}
+    >
+      <div className=" h-[88px] w-5/6 flex justify-between items-center ">
         <div className="">
           <img src={logo} alt="logo" />
         </div>
@@ -31,7 +38,7 @@ function Header() {
           </div>
           <div
             className="cursor-pointer hover:text-amberYellow"
-            onClick={() => navigate("/help")}
+            onClick={() => navigate("/contact")}
           >
             Contact Us
           </div>

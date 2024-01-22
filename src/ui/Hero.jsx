@@ -10,7 +10,7 @@ function Hero() {
             Compare and Choose the Best Loan
           </h5>
           <GradientHeader
-            to={"tl"}
+            to={"l"}
             addedClass="text-7xl font-extrabold font-poppins "
           >
             Find the <br /> Perfect Loan <br />

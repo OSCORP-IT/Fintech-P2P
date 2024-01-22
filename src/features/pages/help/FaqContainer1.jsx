@@ -1,13 +1,11 @@
 import FaqItem from "./FaqItem";
 import { plFaq, blFaq, afFaq } from "./FAQ";
-import { BiCategoryAlt } from "react-icons/bi";
 function FaqContainer1({ openFaqId, handleClickFAQ }) {
   return (
     <div className="w-5/6 gap-6 flex justify-between items-start">
       <div className="w-1/3">
         <div className="flex gap-1 items-center justify-start pt-6 pb-2">
-          <BiCategoryAlt className="text-xl text-emeraldGreen" />
-          <h2 className="text-2xl  font-bold text-emeraldGreen">
+          <h2 className="text-2xl  font-bold text-textColor1">
             Personal Loans
           </h2>
         </div>
@@ -25,8 +23,7 @@ function FaqContainer1({ openFaqId, handleClickFAQ }) {
 
       <div className="w-1/3">
         <div className="flex gap-1 items-center justify-start pt-6 pb-2">
-          <BiCategoryAlt className="text-xl text-emeraldGreen" />
-          <h2 className="text-2xl  font-bold text-emeraldGreen">
+          <h2 className="text-2xl  font-bold text-textColor1">
             Business Loans
           </h2>
         </div>
@@ -43,8 +40,7 @@ function FaqContainer1({ openFaqId, handleClickFAQ }) {
       </div>
       <div className="w-1/3">
         <div className="flex gap-1 items-center justify-start pt-6 pb-2">
-          <BiCategoryAlt className="text-xl text-emeraldGreen" />
-          <h2 className="text-2xl  font-bold text-emeraldGreen">
+          <h2 className="text-2xl  font-bold text-textColor1">
             Auto Refinance
           </h2>
         </div>

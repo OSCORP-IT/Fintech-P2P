@@ -10,7 +10,7 @@ export default {
         accentColor: "#F27457",
         backgroundMain: "#F2FAFA",
         dropShadow: "#B3D4D8",
-        bgGradient1: "##069292",
+        bgGradient1: "#069292",
         bgGradient2: "#143A3A",
         bgGradient3: "#DEECE8",
         bgGradient4: "#B3D4D8",

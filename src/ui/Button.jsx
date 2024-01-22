@@ -1,7 +1,7 @@
 import { MdArrowOutward } from "react-icons/md";
 function Button({ addedClass, children, hover }) {
   const generalClass =
-    "cursor-pointer hover:shadow flex  items-center justify-center rounded-md ";
+    "cursor-pointer flex gap-1  items-center justify-center rounded-md ";
   const hoverDefault = "hover:bg-opacity-80 hover:shadow-inner";
   return (
     <button
@@ -10,7 +10,7 @@ function Button({ addedClass, children, hover }) {
       }
         ${hover ? hover : hoverDefault}`}
     >
-      <p>{children}</p>
+      {children}
       <MdArrowOutward />
     </button>
   );

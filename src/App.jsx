@@ -15,6 +15,7 @@ import Guarantor from "./features/user/Guarantor";
 import Dashboard from "./features/user/Dashboard";
 import BasicInfo from "./features/businessLoan/basicInfo/BasicInfo";
 import BusinessInfo from "./features/businessLoan/businessInfo/BusinessInfo";
+import Contact from "./features/pages/contact/contact";
 
 const router = createBrowserRouter([
   {
@@ -45,7 +46,11 @@ const router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
-        path: "/help",
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/faq",
         element: <Help />,
       },
       {

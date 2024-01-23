@@ -12,10 +12,10 @@ import Portfolio from "./features/user/Portfolio";
 import ProfessionalInfo from "./features/user/ProfessionalInfo";
 import BankDetails from "./features/user/BankDetails";
 import Guarantor from "./features/user/Guarantor";
-import Dashboard from "./features/user/Dashboard";
 import BasicInfo from "./features/businessLoan/basicInfo/BasicInfo";
 import BusinessInfo from "./features/businessLoan/businessInfo/BusinessInfo";
 import Contact from "./features/pages/contact/contact";
+import DashboarLayout from "./features/user-v2/DashboarLayout";
 
 const router = createBrowserRouter([
   {
@@ -58,10 +58,6 @@ const router = createBrowserRouter([
         element: <ProfileOverview />,
       },
       {
-        path: "/user/dashboard",
-        element: <Dashboard />,
-      },
-      {
         path: "/user/portfolio/personal",
         element: <Portfolio />,
       },
@@ -86,6 +82,10 @@ const router = createBrowserRouter([
         element: <BusinessInfo />,
       },
     ],
+  },
+  {
+    path: "/user/dashboard",
+    element: <DashboarLayout />,
   },
 ]);
 function App() {

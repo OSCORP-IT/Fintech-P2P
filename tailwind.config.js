@@ -7,7 +7,7 @@ export default {
         textColor1: "#0D5152",
         textColor2: "#0D5152",
         textColor3: "#777986",
-        accentColor: "#F27457",
+        accentColor: "#FF6321",
         backgroundMain: "#F2FAFA",
         dropShadow: "#B3D4D8",
         bgGradient1: "#069292",

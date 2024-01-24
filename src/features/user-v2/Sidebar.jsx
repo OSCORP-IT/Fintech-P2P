@@ -29,11 +29,11 @@ function Sidebar() {
         </div>
 
         <div className=" absolute bottom-4 left-6">
-          <div className="mb-4 cursor-pointer flex items-center gap-2 rounded-md py-2 px-3 text-xl font-semibold bg-white hover:bg-opacity-50 hover:bg-bgGradient4 text-textColor3 hover:text-textColor1">
+          <div className="mb-4 cursor-pointer flex items-center gap-2 rounded-md py-2 px-3 text-xl font-mediumfin bg-white hover:bg-opacity-50 hover:bg-bgGradient4 text-textColor3 hover:text-textColor1">
             <FaQuestionCircle className="text-2xl" />
             <h3>Get Help & Support</h3>
           </div>
-          <div className="mb-4 cursor-pointer flex items-center gap-2 rounded-md py-2 px-3 text-xl font-semibold bg-white hover:bg-opacity-50 hover:bg-bgGradient4 text-textColor3 hover:text-textColor1">
+          <div className="mb-4 cursor-pointer flex items-center gap-2 rounded-md py-2 px-3 text-xl font-mediumfin bg-white hover:bg-opacity-50 hover:bg-bgGradient4 text-textColor3 hover:text-textColor1">
             <IoSettings className="text-2xl" />
             <h3>Settings</h3>
           </div>

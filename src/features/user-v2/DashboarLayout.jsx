@@ -33,26 +33,22 @@ function DashboarLayout() {
               <h1 className="capitalize text-lg font-medium">transactions</h1>
               <div className="pt-4 overflow-y-scroll h-[60%] px-3">
                 {[1, 2, 3, 4, 5].map((item) => (
-                  <>
-                    <div
-                      className="pb-3 flex items-center justify-between capitalize text-gray-700"
-                      key={item}
-                    >
-                      <div className="flex items-center gap-2">
-                        <div className="h-[40px] w-[40px] rounded-full bg-gray-300 "></div>
-                        <div>
-                          <h2 className=" text-sm font-medium">
-                            apartment Loan
-                          </h2>
-                          <p className=" text-xs font-medium">3rd payment</p>
-                        </div>
-                      </div>
+                  <div
+                    className="pb-3 flex items-center justify-between capitalize text-gray-700"
+                    key={item}
+                  >
+                    <div className="flex items-center gap-2">
+                      <div className="h-[40px] w-[40px] rounded-full bg-gray-300 "></div>
                       <div>
-                        <h2 className="text-sm font-medium">৳ 50,000</h2>
-                        <p className="text-xs font-medium">jan,2024</p>
+                        <h2 className=" text-sm font-medium">apartment Loan</h2>
+                        <p className=" text-xs font-medium">3rd payment</p>
                       </div>
                     </div>
-                  </>
+                    <div>
+                      <h2 className="text-sm font-medium">৳ 50,000</h2>
+                      <p className="text-xs font-medium">jan,2024</p>
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>

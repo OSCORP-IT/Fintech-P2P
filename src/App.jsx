@@ -18,6 +18,7 @@ import Contact from "./features/pages/contact/contact";
 import DashboarLayout from "./features/user-v2/DashboarLayout";
 import Loans from "./features/user-v2/Loans";
 import Transaction from "./features/user-v2/Transaction";
+import PortfolioContainer from "./features/user-v2/portfolio/PortfolioContainer";
 
 const router = createBrowserRouter([
   {
@@ -92,6 +93,10 @@ const router = createBrowserRouter([
   {
     path: "/user/loans",
     element: <Loans />,
+  },
+  {
+    path: "/user/portfolio/:infoStep",
+    element: <PortfolioContainer />,
   },
   {
     path: "/user/transactions",

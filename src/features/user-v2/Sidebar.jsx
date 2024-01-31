@@ -37,9 +37,9 @@ function Sidebar() {
           <h3>Loans</h3>
         </div>
         <div
-          onClick={() => navigate("/user/portfolio")}
+          onClick={() => navigate("/user/portfolio/basic_info")}
           className={`mb-4 cursor-pointer flex items-center gap-2 rounded-md py-2 px-3 text-xl font-semibold ${
-            active === "/user/portfolio"
+            active.includes("/user/portfolio")
               ? "bg-bgGradient4 bg-opacity-50 text-textColor1"
               : "text-textColor3"
           } hover:bg-opacity-50 hover:bg-bgGradient4  hover:text-textColor1`}

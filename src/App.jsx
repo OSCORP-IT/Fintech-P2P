@@ -16,6 +16,8 @@ import BasicInfo from "./features/businessLoan/basicInfo/BasicInfo";
 import BusinessInfo from "./features/businessLoan/businessInfo/BusinessInfo";
 import Contact from "./features/pages/contact/contact";
 import DashboarLayout from "./features/user-v2/DashboarLayout";
+import Loans from "./features/user-v2/Loans";
+import Transaction from "./features/user-v2/Transaction";
 
 const router = createBrowserRouter([
   {
@@ -86,6 +88,14 @@ const router = createBrowserRouter([
   {
     path: "/user/dashboard",
     element: <DashboarLayout />,
+  },
+  {
+    path: "/user/loans",
+    element: <Loans />,
+  },
+  {
+    path: "/user/transactions",
+    element: <Transaction />,
   },
 ]);
 function App() {

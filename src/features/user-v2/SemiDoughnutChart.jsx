@@ -9,7 +9,7 @@ const SemiDoughnutChart = () => {
 
   const chartOptions = {
     pieHole: 0.65, // Set the pieHole to 0.5 for a half-doughnut chart
-    pieSliceText: "none", // Hide slice labels
+    // Hide slice labels
     colors: ["#0D5152", "#FF6321"], // Customize the color
     chartArea: { width: "100%", height: "100%" }, // Adjust chart area for better visibility
   };

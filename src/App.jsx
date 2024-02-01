@@ -8,10 +8,6 @@ import ProfilePic from "./features/authentication/ProfilePic";
 import AboutUs from "./features/pages/about/AboutUs";
 import Help from "./features/pages/help/Help";
 import ProfileOverview from "./features/user/ProfileOverview";
-import Portfolio from "./features/user/Portfolio";
-import ProfessionalInfo from "./features/user/ProfessionalInfo";
-import BankDetails from "./features/user/BankDetails";
-import Guarantor from "./features/user/Guarantor";
 import BasicInfo from "./features/businessLoan/basicInfo/BasicInfo";
 import BusinessInfo from "./features/businessLoan/businessInfo/BusinessInfo";
 import Contact from "./features/pages/contact/contact";
@@ -59,22 +55,6 @@ const router = createBrowserRouter([
       {
         path: "/user/profile",
         element: <ProfileOverview />,
-      },
-      {
-        path: "/user/portfolio/personal",
-        element: <Portfolio />,
-      },
-      {
-        path: "/user/portfolio/professional",
-        element: <ProfessionalInfo />,
-      },
-      {
-        path: "/user/portfolio/bank_details",
-        element: <BankDetails />,
-      },
-      {
-        path: "/user/portfolio/guarantor",
-        element: <Guarantor />,
       },
       {
         path: "/user/business_loan/basicInfo",

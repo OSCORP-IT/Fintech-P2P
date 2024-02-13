@@ -5,7 +5,7 @@ function FaqItem({ question, answer, id, openFaqId, handleClickFAQ }) {
       {openFaqId !== id && (
         <div
           onClick={() => handleClickFAQ(id)}
-          className="bg-bgGradient3 bg-opacity-50 rounded-lg border border-stone-300 cursor-pointer p-2"
+          className="bg-bgGradient3 bg-opacity-50 ease-out rounded-lg border border-stone-300 cursor-pointer p-2"
         >
           <div className="flex justify-between items-center px-2">
             <h2 className="text-base font-medium text-textColor3">

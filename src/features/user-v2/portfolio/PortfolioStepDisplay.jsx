@@ -8,6 +8,7 @@ function PortfolioStepDisplay({ step, percent, label }) {
           height={80}
           percent={percent}
           text={`(${step}/5)`}
+          pathColor={"#F3F4F8"}
         />
         <h2 className="text-xl text-accentColor capitalize font-semibold">
           {label}

@@ -13,7 +13,7 @@ function Footer() {
     "border border-gray-300 rounded-md p-0.5 cursor-pointer hover:bg-gray-200";
   return (
     <>
-      <div className="w-full flex justify-center items-start py-4">
+      <div className="w-full flex justify-center items-start pt-8 pb-4">
         <div className="bg-white border-y border-y-gray-500/50 w-5/6 flex justify-between items-start py-4">
           <div className="w-1/6">
             <img src={logo} alt="logo" />

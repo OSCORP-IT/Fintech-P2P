@@ -18,7 +18,7 @@ function BasicInfo() {
     setSelectedDistrict(selectedDistrictName);
   };
   return (
-    <div className="w-3/4 px-4 overflow-y-scroll">
+    <div className="w-3/4 px-4">
       <div>
         <PortfolioInput
           label={"your name"}

@@ -6,12 +6,12 @@ function ProfileLayout({ children }) {
     <div className="bg-backgroundMain flex items-start font-poppins">
       <Sidebar />
       <div className="w-1/5"></div>
-      <div className="w-4/5 p-6 h-screen relative">
+      <div className="w-4/5 p-6 relative">
         <div className="h-[13%]">
           <DashboardHeader />{" "}
         </div>
-        <div className=" h-[65%]">{children}</div>
-        <div className="h-[20%]">
+        <div className="overflow-y-scroll">{children}</div>
+        <div>
           <DashboardFooter />
         </div>
       </div>

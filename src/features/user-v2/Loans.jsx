@@ -30,7 +30,7 @@ function Loans() {
           </div>
         </div>
       </div>
-      <div className="rounded-md cards h-[85%] p-4 bg-white relative">
+      <div className="rounded-md cards h-[70vh] p-4 bg-white relative overflow-y-scroll">
         <div className="flex justify-between items-center text-start text-sm text-textColor3 uppercase border-b border-gray-300 pb-2">
           <div className="w-2/12">loan type</div>
           <div className="w-2/12">Loan Purpose</div>

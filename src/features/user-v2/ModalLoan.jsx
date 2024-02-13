@@ -30,7 +30,7 @@ function ModalLoan({ onModalOpen }) {
     >
       <div
         ref={childDivRef}
-        className="w-3/5 h-[70%]  bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-gray-300 from-15% to-white border-2 border-accentColor rounded-md pl-6 pr-4 py-6 flex"
+        className="w-3/5 h-[70%]  bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-gray-200 from-15% to-white border-2 border-accentColor rounded-md pl-6 pr-4 py-6 flex"
       >
         <div className="w-4/6 h-full">
           <div className="flex justify-start gap-8 items-center">
@@ -62,14 +62,16 @@ function ModalLoan({ onModalOpen }) {
             <h5 className="text-sm font-medium">pay loan amount from lender</h5>
             <h2 className=" text-3xl font-semibold pt-2">৳ 2,600,000</h2>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center relative">
             <CircularProgressBarItem
               width={150}
               height={150}
               percent={70}
               text={"Paid"}
+              pathColor={"#0D5152"}
+              ratio={0.55}
             />
-            <h2 className="text-xl font-semibold pt-2 text-gray-700">
+            <h2 className="absolute m-auto bottom-6 text-xl font-semibold pt-2 text-gray-700">
               ৳ 10,000,000
             </h2>
           </div>

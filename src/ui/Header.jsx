@@ -14,47 +14,49 @@ function Header() {
       }`}
     >
       <div className=" h-[88px] w-5/6 flex justify-between items-center ">
-        <div className="">
+        <div className="w-3/12">
           <img src={logo} alt="logo" />
         </div>
-        <div className="flex justify-around flex-grow font-medium">
+        <div className="flex justify-around flex-grow font-medium w-6/12 text-gray-700/80">
           <div
-            className="cursor-pointer hover:text-amberYellow"
+            className="cursor-pointer hover:text-accentColor hover:border-b hover:border-b-accentColor"
             onClick={() => navigate("/")}
           >
             Home
           </div>
           <div
-            className="cursor-pointer hover:text-amberYellow"
+            className="cursor-pointer  hover:text-accentColor hover:border-b hover:border-b-accentColor"
             onClick={() => navigate("/")}
           >
             Product
           </div>
           <div
-            className="cursor-pointer hover:text-amberYellow"
+            className="cursor-pointer  hover:text-accentColor hover:border-b hover:border-b-accentColor"
             onClick={() => navigate("/about_us")}
           >
             About Us
           </div>
           <div
-            className="cursor-pointer hover:text-amberYellow"
+            className="cursor-pointer  hover:text-accentColor hover:border-b hover:border-b-accentColor"
             onClick={() => navigate("/contact")}
           >
             Contact Us
           </div>
         </div>
-        <div className="flex gap-4 text-white">
-          <div className="flex bg-amberYellow rounded-full justify-between items-center text-base p-1">
+        <div className="flex gap-4 justify-end text-white w-3/12">
+          <div className="flex bg-amberYellow rounded-full justify-between items-center text-base">
             <select
               name="language"
               id="language"
-              className="bg-transparent text-textColor3 border border-textColor3 py-1 px-2 rounded-md"
+              className="bg-transparent text-textColor3 border border-textColor3 py-2 rounded-md"
             >
               <option value="">EN</option>
               <option value="">BN</option>
             </select>
           </div>
-          <Button addedClass={"px-3 bg-accentColor"}>Sign In</Button>
+          <Button addedClass={"px-4 py-2 bg-accentColor"} arrow={true}>
+            Sign In
+          </Button>
         </div>
       </div>
     </div>

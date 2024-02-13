@@ -47,7 +47,7 @@ function FaqContainer1({ openFaqId, handleClickFAQ }) {
             question={item.question}
             answer={item.answer}
             key={item.id}
-            id={item.id}
+            id={`2${item.id}`}
             handleClickFAQ={handleClickFAQ}
             openFaqId={openFaqId}
           />

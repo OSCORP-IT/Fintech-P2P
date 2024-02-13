@@ -12,7 +12,7 @@ function PorfessionalInfo() {
     setStatus(e.target.value);
   }
   return (
-    <div className="w-3/4 px-4 overflow-y-scroll">
+    <div className="w-3/4 px-4">
       <ProfessionalStatus handleStatus={handleStatus} status={status} />
       {/* MonthlySalary & Company name */}
       <div className="flex gap-8">

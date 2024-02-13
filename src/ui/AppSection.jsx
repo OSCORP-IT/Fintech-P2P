@@ -2,7 +2,7 @@ import mobile from "../assets/mobile.png";
 import { FaGooglePlay, FaApple } from "react-icons/fa";
 function AppSection() {
   return (
-    <div className="flex justify-center bg-backgroundMain">
+    <div className="flex justify-center">
       <div className="flex w-5/6  justify-start items-center py-8">
         <div className="w-3/5">
           <div className="text-start">

@@ -13,10 +13,10 @@ function TrustyBoard() {
         </p>
       </div>
       <div className="flex w-2/4 justify-between items-center px-8 py-4">
-        <Button addedClass={"bg-accentColor py-3 px-2 text-white"}>
+        <Button addedClass={"bg-accentColor p-3 text-white"}>
           Executive Team
         </Button>
-        <Button addedClass={"bg-accentColor py-3 px-2 text-white"}>
+        <Button addedClass={"bg-accentColor p-3 text-white"}>
           Board of Directors
         </Button>
       </div>

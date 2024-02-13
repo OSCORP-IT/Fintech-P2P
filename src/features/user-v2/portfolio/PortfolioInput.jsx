@@ -9,7 +9,7 @@ function PortfolioInput({
   nid,
 }) {
   return (
-    <div>
+    <div className="pb-2">
       <h2 className="text-sm font-semibold py-2 capitalize">
         {label}
         {required && <span className="text-xs text-red-600">*</span>}

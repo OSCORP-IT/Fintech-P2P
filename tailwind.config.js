@@ -18,6 +18,7 @@ export default {
         bgGradient2: "#143A3A",
         bgGradient3: "#DEECE8",
         bgGradient4: "#B3D4D8",
+        textGradientTo: "#649697",
       },
       screens: {
         tab: "1100px",

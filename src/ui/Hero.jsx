@@ -22,11 +22,15 @@ function Hero() {
             adipiscing tincidunt ut aenean.
           </p>
           <div className="flex my-4 gap-2 font-semibold">
-            <Button addedClass={"px-2 py-3 bg-accentColor text-white"}>
+            <Button
+              addedClass={"px-4 py-3 bg-accentColor text-white"}
+              arrow={true}
+            >
               <h3>Check Your Rate</h3>
             </Button>
             <Button
               addedClass={"px-4 py-3 text-textColor3 border border-textColor3"}
+              arrow={true}
             >
               <h3>About Us</h3>
             </Button>

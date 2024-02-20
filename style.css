@@ -1,0 +1,15 @@
+@media print {
+  /* Hide elements not meant for printing */
+  body * {
+    visibility: hidden;
+  }
+  /* Display the specific div you want to print */
+  #divToPrint,
+  #divToPrint * {
+    visibility: visible;
+  }
+  /* Optional: Adjust margins, font size, etc. for printing */
+  @page {
+    margin: 0;
+  }
+}

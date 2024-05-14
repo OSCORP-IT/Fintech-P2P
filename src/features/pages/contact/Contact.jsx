@@ -3,14 +3,15 @@ import ContactDetails from "./ContactDetails";
 import { ImOffice } from "react-icons/im";
 import { PiDeviceMobileFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
+import EqualHeightFlexContainer from "../../../ui/EqualHeightFlexContainer";
 
 function Contact() {
   return (
     <div className="flex flex-col items-center">
-      <div className="w-5/6 py-[60px] flex gap-8">
+      <EqualHeightFlexContainer addedClass="w-5/6 py-[60px] gap-8">
         <ContactDetails />
         <ContactForm />
-      </div>
+      </EqualHeightFlexContainer>
       <div className="flex justify-between items-center w-5/6 pb-6">
         <div className="flex items-center gap-4">
           <div className="bg-textColor2 text-center rounded-md text-3xl p-3 text-teal-400">

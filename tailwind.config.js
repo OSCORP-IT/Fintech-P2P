@@ -10,6 +10,7 @@ export default {
       colors: {
         textColor1: "#0D5152",
         textColor2: "#0D5152",
+        emeraldGreen: "#0D5152",
         textColor3: "#777986",
         accentColor: "#FF6321",
         backgroundMain: "#F2FAFA",
@@ -22,6 +23,7 @@ export default {
       },
       screens: {
         tab: "1100px",
+        laptop: "1300px",
       },
       fontFamily: {
         arial: ["Arial", "sans-serif"],

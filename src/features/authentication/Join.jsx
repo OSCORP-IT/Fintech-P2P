@@ -8,9 +8,13 @@ function Join() {
   return (
     <Layout>
       <div className="w-full px-4">
-        <div className="w-full rounded-md border-2 border-textColor1 text-textColor1 flex gap-2 items-center justify-between pl-4 pr-4">
+        <div className="w-full rounded-md border-2 border-textColor1 text-textColor1 flex gap-2 items-center pl-4 pr-4">
           <FaGlobe className="text-xl" />
-          <select name="country" id="country" className="py-3 flex-grow">
+          <select
+            name="country"
+            id="country"
+            className="py-3 flex-grow border-none"
+          >
             <option value="">Country Code</option>
             <option value="bd">Bangladesh (+88)</option>
             <option value="ind">India (+90)</option>
@@ -34,7 +38,7 @@ function Join() {
             Next
           </Button>
         </div>
-        <h2 className="text-center text-textColor3 capitalize">
+        <h2 className="text-sm laptop:text-base text-center text-textColor3 capitalize">
           already have an account?
           <strong className="cursor-pointer text-textColor1"> Sign in</strong>
         </h2>

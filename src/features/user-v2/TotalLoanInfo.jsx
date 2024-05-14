@@ -1,6 +1,5 @@
 import Button from "../../ui/Button";
 import CircularProgressBarItem from "./CircularProgressBar";
-import SemiDoughnutChart from "./SemiDoughnutChart";
 function TotalLoanInfo() {
   return (
     <>

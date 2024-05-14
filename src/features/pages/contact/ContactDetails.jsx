@@ -3,7 +3,10 @@ import contact from "../../../assets/contact.png";
 function ContactDetails() {
   return (
     <div className="w-1/2">
-      <GradientHeader to={"l"} addedClass={"text-[55px] font-bold"}>
+      <GradientHeader
+        to={"l"}
+        addedClass={"text-5xl laptop:text-[55px] font-bold"}
+      >
         Get In Touch With Us
       </GradientHeader>
       <p className="text-textColor3 text-base font-normal pt-4 pb-10">

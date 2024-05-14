@@ -12,12 +12,12 @@ function ProfileLayout({ children, menu }) {
     <div className=" bg-gradient-to-l from-orange-50 to-gray-200 flex justify-center">
       <div className="w-5/6 flex gap-4 my-4">
         <div className="w-1/5">
-          <div className="bg-emeraldGreen text-white rounded-md pl-4 py-4">
+          <div className="bg-bgGradient2 text-white rounded-md pl-4 py-4">
             <h1 className="text-xl font-semibold">Abidur Rahman</h1>
             <h5 className="pt-8 text-sm opacity-50 font-thin">ID Number</h5>
             <p className="text-xl font-semibold">123456789</p>
           </div>
-          <div className="bg-emeraldGreen text-white rounded-md pl-4 mt-4 py-4 shadow-black/50 shadow-md h-">
+          <div className="bg-bgGradient2 text-white rounded-md pl-4 mt-4 py-4 shadow-black/50 shadow-md h-">
             <h5 className="pt-2 text-sm opacity-50 font-thin">Total Invest</h5>
             <p className="text-xl font-semibold">৳ 50,075,000</p>
             <div className="flex items-center gap-10 border-b border-white/50 w-max pb-4">

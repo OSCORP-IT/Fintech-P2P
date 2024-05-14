@@ -14,7 +14,7 @@ function Halal() {
           <div>
             <GradientHeader
               to="l"
-              addedClass="text-[54px] font-extrabold py-6 font-poppins"
+              addedClass="text-5xl laptop:text-[54px]  font-extrabold py-6 font-poppins"
             >
               Committed to Pure Halal Standards: Our Assurance of
               <span className="text-amberYellow"> 100% Halal </span>

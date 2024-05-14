@@ -10,7 +10,7 @@ function AboutHero() {
         </div>
         <div className="flex w-5/6 rounded-3xl items-center justify-center pb-[60px] px-10">
           <div className="w-1/2">
-            <h2 className="py-4 font-bold text-textColor1 text-[48px] leading-none">
+            <h2 className="py-4 font-bold text-textColor1 text-[35px] laptop:text-5xl leading-[1.15]">
               From the smallest needs to the largest loans, we help you meet all
               your needs with 100% halal finance
             </h2>

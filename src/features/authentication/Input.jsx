@@ -8,7 +8,7 @@ function Input({ id, placeholder, type, required, children }) {
         id={id}
         required={required ? required : false}
         placeholder={placeholder}
-        className="py-3 rounded-md flex-grow px-0.5"
+        className="py-3 rounded-md flex-grow px-0.5 border-none"
       />
     </div>
   );

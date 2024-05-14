@@ -11,7 +11,7 @@ function Hero() {
           </h5>
           <GradientHeader
             to={"l"}
-            addedClass="text-7xl font-extrabold font-poppins "
+            addedClass=" text-5xl laptop:text-7xl font-extrabold font-poppins "
           >
             Find the <br /> Perfect Loan <br />
             for Your Need

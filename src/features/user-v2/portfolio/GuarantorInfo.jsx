@@ -52,7 +52,7 @@ function GuarantorInfo() {
       {inputSets.map((inputSet, index) => (
         <>
           <div className="text-center text-white border border-gray-300 font-semibold text-lg mt-4 bg-textColor1">
-            Guarantor {index + 1}
+            Guarantor - {index + 1}
           </div>
           <div>
             <PortfolioInput

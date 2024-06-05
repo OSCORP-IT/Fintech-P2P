@@ -50,8 +50,11 @@ function GuarantorInfo() {
   return (
     <div className="w-3/4 px-4">
       {inputSets.map((inputSet, index) => (
-        <>
-          <div className="text-center text-white border border-gray-300 font-semibold text-lg mt-4 bg-textColor1">
+        <div
+          className="px-4 rounded-md mb-4 border border-gray-300"
+          key={index}
+        >
+          <div className="text-center text-white font-semibold text-lg mt-4 bg-textColor1">
             Guarantor - {index + 1}
           </div>
           <div>
@@ -116,7 +119,6 @@ function GuarantorInfo() {
               </select>
             </div>
           </div>
-
           <div className="flex items-center gap-8">
             <div className="w-1/2">
               <PortfolioInput
@@ -171,7 +173,7 @@ function GuarantorInfo() {
               </div>
             </div>
           </div>
-        </>
+        </div>
       ))}
 
       <div className="py-4 w-1/4">

@@ -7,7 +7,7 @@ function PortfolioStepDisplay({ step, percent, label }) {
           width={80}
           height={80}
           percent={percent}
-          text={`(${step}/5)`}
+          text={`(${step}/6)`}
           pathColor={"#F3F4F8"}
         />
         <h2 className="text-xl text-accentColor capitalize font-semibold">
@@ -49,6 +49,13 @@ function PortfolioStepDisplay({ step, percent, label }) {
           } py-2 pl-4 rounded-md`}
         >
           guarantor information
+        </h2>
+        <h2
+          className={`${
+            step === 6 ? "text-white bg-textColor1" : "text-textColor3"
+          } py-2 pl-4 rounded-md`}
+        >
+          existing loans
         </h2>
       </div>
     </>

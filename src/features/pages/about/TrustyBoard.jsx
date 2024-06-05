@@ -2,7 +2,7 @@ import Button from "../../../ui/Button";
 
 function TrustyBoard() {
   return (
-    <div className="w-full flex flex-col items-center bg-emeraldGreen">
+    <div className="w-full flex flex-col items-center bg-white">
       <div className="flex gap-1 items-center justify-center py-6">
         <h2 className="text-3xl  font-bold text-textColor1">Leadership</h2>
       </div>

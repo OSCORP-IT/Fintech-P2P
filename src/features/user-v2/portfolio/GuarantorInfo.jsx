@@ -15,6 +15,15 @@ function GuarantorInfo() {
       guarantorDesignation: "",
       guarantorImage: "",
     },
+    {
+      guarantorName: "",
+      guarantorNid: "",
+      guarantorPhone: "",
+      guarantorProfession: "",
+      guarantorCompany: "",
+      guarantorDesignation: "",
+      guarantorImage: "",
+    },
   ]);
 
   const addInputSet = () => {

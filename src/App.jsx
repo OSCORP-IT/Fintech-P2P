@@ -57,7 +57,7 @@ const router = createBrowserRouter([
         element: <ProfileOverview />,
       },
       {
-        path: "/user/business_loan/basicInfo",
+        path: "/user/business_loan/basic_info",
         element: <BasicInfo />,
       },
       {

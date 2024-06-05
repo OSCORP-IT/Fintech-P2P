@@ -47,7 +47,6 @@ function ProfilePic() {
               className="w-full h-full object-cover"
               src={selectedFile}
               alt="Selected"
-              style={{ maxWidth: "100%" }}
             />
           </div>
         )}

@@ -1,14 +1,14 @@
 import hero from "../assets/Hero.png";
 import Button from "./Button";
 import GradientHeader from "./GradientHeader";
+import H5 from "./H5";
+import P from "./P";
 function Hero() {
   return (
     <div className="w-full bg-backgroundMain flex justify-center">
       <div className="w-5/6 flex items-center justify-center py-8">
         <div className="text-start w-1/2 pr-10">
-          <h5 className=" text-textColor1 font-bold text-2xl py-2 ">
-            Compare and Choose the Best Loan
-          </h5>
+          <H5>Compare and Choose the Best Loan</H5>
           <GradientHeader
             to={"l"}
             addedClass=" text-5xl laptop:text-7xl font-extrabold font-poppins "
@@ -16,23 +16,23 @@ function Hero() {
             Find the <br /> Perfect Loan <br />
             for Your Need
           </GradientHeader>
-          <p className="text-black text-lg font-normal py-6">
+          <P addedClass={"py-6"}>
             Lorem ipsum dolor sit amet consectetur. Lacus nulla sed cras
             vulputate nulla lectus mattis interdum proin. Congue magna
             adipiscing tincidunt ut aenean.
-          </p>
+          </P>
           <div className="flex my-4 gap-2 font-semibold">
             <Button
               addedClass={"px-4 py-3 bg-accentColor text-white"}
               arrow={true}
             >
-              <h3>Check Your Rate</h3>
+              Check Your Rate
             </Button>
             <Button
               addedClass={"px-4 py-3 text-textColor3 border border-textColor3"}
               arrow={true}
             >
-              <h3>About Us</h3>
+              About Us
             </Button>
           </div>
         </div>

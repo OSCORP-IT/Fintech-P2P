@@ -6,6 +6,8 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import Button from "./Button";
+import FooterLink from "./FooterLink";
+import H2 from "./H2";
 import P from "./P";
 
 function Footer() {
@@ -22,28 +24,28 @@ function Footer() {
             <div>
               <h2 className="font-bold">About Fintech</h2>
               <div className="text-textColor3 font-medium pt-2 leading-relaxed">
-                <P>Home</P>
-                <P>About Us</P>
-                <P>FAQ</P>
-                <P>Blog</P>
+                <FooterLink>Home</FooterLink>
+                <FooterLink>About Us</FooterLink>
+                <FooterLink>FAQ</FooterLink>
+                <FooterLink>Blog</FooterLink>
               </div>
             </div>
             <div>
               <h2 className="font-bold">Products</h2>
               <div className="text-textColor3 font-medium pt-2 leading-relaxed">
-                <P>Business Loan</P>
-                <P>Personal Loan</P>
-                <P>Investment</P>
+                <FooterLink>Business Loan</FooterLink>
+                <FooterLink>Personal Loan</FooterLink>
+                <FooterLink>Investment</FooterLink>
               </div>
             </div>
           </div>
           <div className="w-2/6">
-            <h2 className="text-2xl font-bold text-textColor1 uppercase">
+            <H2 addedClass={"uppercase text-textColor1"}>
               Join Our Newsletter
-            </h2>
-            <p className="py-2 text-lg font-normal text-textColor3">
+            </H2>
+            <P addedClass={"py-2"}>
               Tools, tips, and insights to improve your financial health.
-            </p>
+            </P>
             <div className="flex gap-4 items-center justify-center">
               <input
                 type="text"

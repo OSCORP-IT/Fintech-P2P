@@ -1,22 +1,24 @@
 import mobile from "../assets/mobile.png";
 import { FaGooglePlay, FaApple } from "react-icons/fa";
+import H5 from "./H5";
+import H1 from "./H1";
+import P from "./P";
+import H3 from "./H3";
 function AppSection() {
   return (
     <div className="flex justify-center">
       <div className="flex w-5/6  justify-start items-center py-8">
         <div className="w-3/5">
           <div className="text-start">
-            <h5 className=" text-textColor2  font-bold text-xl py-2 font-poppins">
-              Download Our Apps
-            </h5>
-            <h2 className="text-[42px] font-bold leading-none font-poppins text-textColor1">
+            <H5>Download Our Apps</H5>
+            <H1 addedClass={"leading-none"}>
               Get Our Apps from Easy Financial Management
-            </h2>
-            <p className="text-black text-base font-normal py-6">
+            </H1>
+            <P addedClass={"py-6"}>
               Lorem ipsum dolor sit amet consectetur. Lacus nulla sed cras
               vulputate nulla lectus mattis interdum proin. Congue magna
               adipiscing tincidunt ut aenean.
-            </p>
+            </P>
           </div>
           <ul className="flex gap-20 pt-2 font-medium list-disc pl-4">
             <li>Quick Loan Application</li>
@@ -32,10 +34,8 @@ function AppSection() {
                 <FaGooglePlay />
               </div>
               <div>
-                <h3>GET IT ON</h3>
-                <h2 className="font-arial text-2xl font-semibold">
-                  Google Play
-                </h2>
+                <h4>GET IT ON</h4>
+                <H3>Google Play</H3>
               </div>
             </div>
             <div className="gap-2 text-textColor1 px-2 py-1 rounded-lg border-2 border-textColor1 flex items-center justify-center">
@@ -43,13 +43,13 @@ function AppSection() {
                 <FaApple />
               </div>
               <div>
-                <h3>Download On The</h3>
-                <h2 className="font-sans text-2xl font-semibold">App Store</h2>
+                <h4>Download On The</h4>
+                <H3>App Store</H3>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-2/5 ">
+        <div className="w-2/5 flex items-center justify-end">
           <img src={mobile} alt="mobile" />
         </div>
       </div>

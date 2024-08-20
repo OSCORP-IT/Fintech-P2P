@@ -1,5 +1,9 @@
-function P({ children }) {
-  return <p className="cursor-pointer hover:text-textColor1">{children}</p>;
+function P({ children, addedClass }) {
+  return (
+    <p className={`text-black/80 text-lg font-normal ${addedClass}`}>
+      {children}
+    </p>
+  );
 }
 
 export default P;

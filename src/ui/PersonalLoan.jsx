@@ -1,6 +1,9 @@
 import { useState } from "react";
 import PerLoan from "../assets/personalLoan.png";
 import Button from "./Button";
+import H2 from "./H2";
+import H1 from "./H1";
+import P from "./P";
 
 function PersonalLoan() {
   const [selectTab, setSelectTab] = useState(1);
@@ -10,12 +13,12 @@ function PersonalLoan() {
   return (
     <div className="w-full bg-white flex justify-center py-6">
       <div className="w-4/6">
-        <div className="text-center font-bold text-3xl text-textColor2 py-6">
-          <h2>
+        <div className="text-center py-6">
+          <H2>
             We’re rewriting the rules of traditional banking, and we only win
             when our customers succeed. We’ve helped over 4 million members
             reach their goals, and we’re just getting started!
-          </h2>
+          </H2>
         </div>
         <div className="grid grid-cols-2 items-center justify-start py-8">
           <div className="">
@@ -55,27 +58,21 @@ function PersonalLoan() {
               </div>
             </div>
             {selectTab == 1 && (
-              <h2 className="text-[44px] font-extrabold text-textColor1 font-poppins">
-                Get up to $40,000 in just a few clicks (tab 1)
-              </h2>
+              <H1>Get up to $40,000 in just a few clicks (tab 1)</H1>
             )}
             {selectTab == 2 && (
-              <h2 className="text-[44px] font-extrabold text-textColor1 font-poppins">
-                Get up to $40,000 in just a few clicks (tab 2)
-              </h2>
+              <H1>Get up to $40,000 in just a few clicks (tab 2)</H1>
             )}
             {selectTab == 3 && (
-              <h2 className="text-[44px] font-extrabold text-textColor1 font-poppins">
-                Get up to $40,000 in just a few clicks (tab 3)
-              </h2>
+              <H1>Get up to $40,000 in just a few clicks (tab 3)</H1>
             )}
-            <p className="text-base font-normal font-poppins py-6 text-textColor3">
+            <P addedClass={"py-6"}>
               With the ability to choose a loan amount of up to $40,000,
               LendingClub offers fixed rates and a monthly repayment plan to fit
               within your budget. We understand the importance of getting the
               money you need, so we work to have funds disbursed to you quickly
               upon loan approval.
-            </p>
+            </P>
             <Button
               addedClass={
                 "px-4 py-2 bg-accentColor text-white fon-medium text-base font-poppins"

@@ -1,5 +1,6 @@
 import CarouselComponent from "./CarouselComponent";
 import GradientHeader from "./GradientHeader";
+import H4 from "./H4";
 
 function Halal() {
   return (
@@ -7,11 +8,9 @@ function Halal() {
       <div className="w-full bg-backgroundMain flex justify-center py-6">
         <div className="w-4/6 pt-10 pb-4 text-center">
           <div className="flex gap-1 items-center justify-center">
-            <h2 className="text-2xl font-bold text-textColor1">
-              How We Are 100% Halal
-            </h2>
+            <H4>How We Are 100% Halal</H4>
           </div>
-          <div>
+          <div className="pb-4">
             <GradientHeader
               to="l"
               addedClass="text-5xl laptop:text-[54px]  font-extrabold py-6 font-poppins"
